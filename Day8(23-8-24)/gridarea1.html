@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(89, 89, 230);
+            text-align: center;
+            padding: 4%; 
+             margin: 2%; 
+             height: 80vh;
+        }
+        div{
+            background-color: white;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            border: px solid black;
+            border-radius: 6px;
+            padding: 6%; 
+            gap: 1% 2% ; 
+            margin-top: 10px;
+            font-size: 70px solid red;
+            grid-template-areas: 
+            "item1 item2 item3 item3"
+            "item1 item4 item5 item6"
+            "item7 item8 item5 item9"
+            "item10 item8 item11 item11";
+                
+        }
+        .item1{
+            grid-area: item1;
+        }
+        .item2{
+            grid-area: item2;
+        }
+        .item3{
+            grid-area: item3;
+        }
+        .item4{
+            grid-area: item4;
+        }
+        .item5{
+            grid-area: item5;
+        }
+        .item6{
+            grid-area: item6;
+        }
+        .item7{
+            grid-area: item7;
+        }
+        .item8{
+            grid-area: item8;
+        }
+        .item9{
+            grid-area: item9;
+        }
+        .item10{
+            grid-area: item10;
+        }
+        .item11{
+            grid-area: item11;
+        }
+
+        @media only screen and (width<800){
+            .container{
+                background-color: yellow ;
+            }
+        }
+        @media only screen and (width<600px){
+            .container{
+                background-color: plum;
+            }
+            .container{
+                grid-template-areas: 
+                "item1"
+                "item2"
+                "item3"
+                "item4"
+                "item5"
+                "item6"
+                "item7"
+                "item8"
+                "item9"
+                "item10"
+                "item11";   
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Masonry 1</div>
+        <div class="item2">Responsive</div>
+        <div class="item3">Overlap</div>
+        <div class="item4">Fluid</div>
+        <div class="item5">Explicity Placed</div>
+        <div class="item6">Negative Space</div>
+        <div class="item7">Flexible Breadth </div>
+        <div class="item8">Masonry 2</div>
+        <div class="item9">Masonry 3</div>
+        <div class="item10">Named Tracks </div>
+        <div class="item11">DOM Order</div>
+    </div>
+</body>
+</html>

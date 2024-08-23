@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .container{
+            background-color: rgb(35, 35, 36);
+            height: 70vh;
+            padding: 2%;
+            margin-top: 6%;
+            margin-left: 14%;
+            margin-right: 18%;
+            
+        }
+        div{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: rgb(143, 84, 203);
+            gap:5px 5px;
+            color: white;
+            font-size: 2rem;
+            text-align:end;
+            grid-template-areas: 
+            "item1 item1 item1"
+            "item2 item3 item3"
+            "item2 item4 item5"
+            "item6 item6 item6";           
+        }
+
+        .item1, .item2, .item3, .item4, .item5, .item6{
+            border-radius: 10px;
+            border: 5px solid black; 
+        }
+
+        .item1{
+            grid-area: item1;
+            
+        }
+        .item2{
+            grid-area: item2;
+            background-color: aqua;
+        }
+        .item3{
+            grid-area: item3;
+            background: linear-gradient(#ADD8E6, #0000FF);
+        }
+        .item4{
+            grid-area: item4;
+            background: linear-gradient(#ADD8E6, #0000FF);
+        }
+        .item5{
+            grid-area: item5;
+            background: linear-gradient(#ADD8E6, #0000FF);
+        }
+        .item6{
+            grid-area: item6;
+        }
+
+        @media only screen and (width<800px){
+            .container{
+                background-color: palegreen;
+            }
+        }
+        @media only screen and (width<550px){
+            .container{
+                grid-template-areas: 
+                "item1"
+                "item2"
+                "item3"
+                "item4"
+                "item5"
+                "item6";
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Header</div>
+        <div class="item2">Sidebar</div>
+        <div class="item3">content-1</div>
+        <div class="item4" >Content-2</div>
+        <div class="item5" >Content-3</div>
+        <div class="item6">Footer</div>
+    </div>
+</body>
+</html>

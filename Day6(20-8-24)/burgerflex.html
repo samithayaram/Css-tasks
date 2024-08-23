@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            width: 100%;
+            height: 70px;
+            background-color: rgb(251, 245, 245);
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+        }
+        nav, a{
+            font-size: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;            
+        }
+        .title{
+            font-size: 25px;
+            padding: 10px;
+            font-weight: 600;
+        }
+        .container{
+            background-image: url(https://www.w3schools.com/w3images/hamburger.jpg);
+            width: 100%;
+            height: 90vh;
+            /* position: relative; */
+        }
+        .content{
+            position: absolute;
+            bottom: 0;
+            font-size: 35px;
+        }
+        .container1{
+            width: 100%;
+            height: 650px;
+            background-color: whitesmoke;
+            display: flex;
+           
+        }
+        .item1{
+            flex-basis: 40%;
+            height: 550px;
+            margin-left: 100px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .img1{
+            width: 85%;
+            height: 550px;
+        }
+        .item2{
+            flex-basis: 40%;
+            height: 550px;
+            margin-top: 50px;
+        }
+        p{
+            font-size: 20px;
+        }
+
+        .container2{
+            width: 100%;
+            height: 650px;
+            background-color: wheat;
+            display: flex;
+           
+        }
+        .item3{
+            flex-basis: 40%;
+            height: 550px;
+            margin-left: 100px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .img2{
+            width: 85%;
+            height: 550px;
+        }
+        .item4{
+            flex-basis: 40%;
+            height: 550px;
+            margin-top: 50px;
+        }
+        .thick{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .light{
+            font-size: 16px;
+            
+        }
+        .container3{
+            width: 100%;
+            height: 600px;
+        }
+        input{
+            height: 40px;
+            width: 80%;
+        }
+        footer{
+            background-color: whitesmoke;
+            text-align: center;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        @media only screen and (width<600px){
+            .container1{
+                flex-direction: column;
+            }
+            .container2{
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">Gourmet au Catering</div>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Menu">Menu</a>
+            <a href="#Contact">Contact</a>       
+        </nav>
+    </header>
+    
+    <section id="Home">
+    <div class="container">
+        <div class="content">
+            <p style="font-size: 35px;">Le Catering</p>
+        </div>
+    </div>
+    </section>
+    
+    <section id="About">
+    <div class="container1">
+        <div class="item1">
+            <img src="about.jpg" alt="" class="img1">
+        </div>
+        <div class="item2">
+            <h1 style="font-size: 50px; text-align: center;">About Catering</h1>
+            <p style="font-size: 30px; text-align: center; color: gray;">Tradition since 1889</p>
+            <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    </section>
+    
+    <section id="Menu">
+    <div class="container2">
+        <div class="item3">
+            <h1 style="font-size: 50px; text-align: center;">Our Menu</h1>
+            <p class="thick">Bread Basket</p>
+            <p class="light">Assortment of fresh baked fruit breads and muffins 5.50</p>
+            <p class="thick">Honey Almond Granola with Fruits</p>
+            <p class="light">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+            <p class="thick">Belgian Waffle</p>
+            <p class="light">Vanilla flavored batter with malted flour 7.50</p>
+            <p class="thick">Scrambled eggs</p>
+            <p class="light">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+            <p class="thick">Blueberry Pancakes</p>
+            <p class="light">With syrup, butter and lots of berries 8.50</p>
+        </div>
+        <div class="item4">
+        <img src="menu.jpg" alt="" class="img2">
+        </div>
+    </div>
+    </section>
+    
+    <section id="Contact">
+    <div class="container3">
+        <div class="contact">
+        <h1 style=" font-size: 35px;">Contact</h1>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+        <h2 style="color: grey;">Catering Service, 42nd Living St, 43043 New York, NY</h2>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <input type="text" id="name" name="username" placeholder="name"><br><br>
+        <input type="number" id="number" name="number" placeholder="How many people"><br><br>
+        <input type="date" id="date" name="date" placeholder="Date"><br><br>
+        <input type="message" id="Message" name="message" placeholder="Message / Special Requirements"><br><br>
+        <button style="height: 40px; width: 15%;">SEND MESSAGE</button>
+        </div>
+    </div>
+    </section>
+
+    <footer><a href="">Powered by W3.css</a></footer>
+</body>
+</html>
